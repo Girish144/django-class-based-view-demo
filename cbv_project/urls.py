@@ -20,5 +20,5 @@ from cbv_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('list/',views.create_view.as_view(),name='create_view')
+    path('form/',views.create_view.as_view(),name='create_view'),
 ]
