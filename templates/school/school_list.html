@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+
+{%block title%}
+
+{%endblock%}
+
+
+{%block body%}
+<table border="4px">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Location</th>
+        <th>Department</th>
+    </tr>
+    </thead>
+    {%for i in school_list%}
+    <tbody>
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.loc}}</td>
+        <td>{{i.department}}</td>
+
+    </tr>
+    </tbody>
+    {%endfor%}
+</table>
+{%endblock%}

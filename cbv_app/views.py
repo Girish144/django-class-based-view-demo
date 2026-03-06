@@ -10,3 +10,12 @@ class create_view(CreateView):
     success_url = reverse_lazy('create_view')
 
 
+class list_view(ListView):
+    model=school
+    template_name='school/school_list.html'
+    context_object_name='school_list'
+
+class detail_view(DetailView):
+    model=school
+    template_name='school/school_detail.html'
+    context_object_name='school'
