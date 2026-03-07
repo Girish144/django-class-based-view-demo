@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+{%block title%}
+delete page
+{%endblock%}
+
+
+{%block body%}
+<h3>school delete page</h3>
+{%if school%}
+<form method="POST">
+    <a href="#">Delete</a>
+    <a href="#">Cancel</a>
+</form>
+{%else%}
+<h4>school not present </h4>
+{%endif%}
+
+{%endblock%}

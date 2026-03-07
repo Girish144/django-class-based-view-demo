@@ -23,4 +23,6 @@ urlpatterns = [
     path('form/',views.create_view.as_view(),name='create_view'),
     path('',views.list_view.as_view(),name='List'),
     path('school/<int:pk>/detail/',views.detail_view.as_view(),name='detail'),
+    path('school/<int:pk>/update/',views.update_view.as_view(),name='update'),
+    path('school/<int:pk>/delete/',views.delete_view.as_view(),name='delete'),
 ]

@@ -19,3 +19,14 @@ class detail_view(DetailView):
     model=school
     template_name='school/school_detail.html'
     context_object_name='school'
+
+class update_view(UpdateView):
+    model=school
+    fields='__all__'
+    template_name='school/school_update.html'
+    context_object_name='form'
+
+class delete_view(DeleteView):
+    model=school
+    template_name='school/school_delete.html'
+    context_object_name='school'
